@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>FinPlan | Personal Planner &amp; Budget</title>
+
+    <!-- ===== PWA META TAGS ===== -->
+    <meta name="theme-color" content="#3b82f6" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0c0f1a" media="(prefers-color-scheme: dark)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="FinPlan">
+    <link rel="manifest" href="data:application/json;charset=utf-8;base64,ewogICJuYW1lIjogIkZpblBsYW4gLSBQZXJzb25hbCBQbGFubmVyICYgQnVkZ2V0IiwKICAic2hvcnRfbmFtZSI6ICJGaW5QbGFuIiwKICAiZGVzY3JpcHRpb24iOiAiUGVyc29uYWwgZmluYW5jZSBwbGFubmVyIGFuZCBidWRnZXQgdHJhY2tlciIsCiAgInN0YXJ0X3VybCI6ICIuIiwKICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwKICAidGhlbWVfY29sb3IiOiAiIzNiODJmNiIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiI2YwZjJmNSIsCiAgImljb25zIjogWwogICAgewogICAgICAic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbCw8c3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgdmlld0JveD0nMCAwIDE5MiAxOTInPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0nZycgeDE9JzAlJyB5MT0nMCUnIHgyPScxMDAlJyB5Mj0nMTAwJSc+PHN0b3Agb2Zmc2V0PScwJScgc3R5bGU9J3N0b3AtY29sb3I6IzNiODJmNicvPjxzdG9wIG9mZnNldD0nMTAwJScgc3R5bGU9J3N0b3AtY29sb3I6IzhhYzRlNicvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPScxOTInIGhlaWdodD0nMTkyJyByeD0nNDInIGZpbGw9J3VybCgjZyknLz48dGV4dCB4PSc5NicgeT0nMTI0JyBmb250LWZhbWlseT0nc3lzdGVtLXVpLC1hcHBsZS1zeXN0ZW0sc2Fucy1zZXJpZicgZm9udC1zaXplPSc3MCcgZm9udC13ZWlnaHQ9JzgwMCcgZmlsbD0nd2hpdGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGxldHRlci1zcGFjaW5nPSctMnB4Jz5GUDwvdGV4dD48L3N2Zz4iLAogICAgICAic2l6ZXMiOiAiMTkyeDE5MiIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLAogICAgICAicHVycG9zZSI6ICJhbnkgbWFza2FibGUiCiAgICB9LAogICAgewogICAgICAic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbCw8c3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgdmlld0JveD0nMCAwIDUxMiA1MTInPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0nZycgeDE9JzAlJyB5MT0nMCUnIHgyPScxMDAlJyB5Mj0nMTAwJSc+PHN0b3Agb2Zmc2V0PScwJScgc3R5bGU9J3N0b3AtY29sb3I6IzNiODJmNicvPjxzdG9wIG9mZnNldD0nMTAwJScgc3R5bGU9J3N0b3AtY29sb3I6IzhhYzRlNicvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSc1MTInIGhlaWdodD0nNTEyJyByeD0nODQnIGZpbGw9J3VybCgjZyknLz48dGV4dCB4PScyNTYnIHk9JzMyOCcgZm9udC1mYW1pbHk9J3N5c3RlbS11aSwtYXBwbGUtc3lzdGVtLHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0nMTgwJyBmb250LXdlaWdodD0nODAwJyBmaWxsPSd3aGl0ZScgdGV4dC1hbmNob3I9J21pZGRsZScgbGV0dGVyLXNwYWNpbmc9Jy0ycHgnPkZQPC90ZXh0Pjwvc3ZnPg0KIgogICAgICAic2l6ZXMiOiAiNTEyeDUxMiIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLAogICAgICAicHVycG9zZSI6ICJhbnkgbWFza2FibGUiCiAgICB9CiAgXQp9">
+
     <style>
         /* ===== THEME TOKENS ===== */
         :root{
@@ -22,6 +31,8 @@
             --income-card-text:#166534;--income-badge-text:#166534;--expense-badge-text:#991b1b;
             --thermo-tube:#f1f5f9;--thermo-border:#cbd5e1;--thermo-line:rgba(0,0,0,0.06);
             --nav-bg:rgba(255,255,255,0.92);
+            --pwa-install-btn-bg:var(--accent);
+            --pwa-install-btn-color:white;
         }
 
         /* Dark mode base tokens */
@@ -39,6 +50,8 @@
             --income-card-text:#6ee7b7;--income-badge-text:#6ee7b7;--expense-badge-text:#fca5a5;
             --thermo-tube:#1e2640;--thermo-border:#2a3555;--thermo-line:rgba(255,255,255,0.04);
             --nav-bg:rgba(22,27,46,0.92);
+            --pwa-install-btn-bg:var(--accent);
+            --pwa-install-btn-color:white;
         }
 
         /* High contrast mode overrides */
@@ -435,6 +448,18 @@
         .theme-toggle-btn{position:relative;overflow:hidden}
         .theme-toggle-btn::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,0.1),transparent);pointer-events:none}
 
+        /* ===== PWA INSTALL BANNER ===== */
+        .pwa-install-banner{display:none;position:fixed;bottom:calc(var(--nav-height) + 0.5rem);left:1rem;right:1rem;z-index:90;background:var(--surface);border-radius:var(--radius-xl);padding:1rem 1.25rem;box-shadow:var(--shadow-lg);border:1px solid var(--border);align-items:center;gap:1rem;animation:slideUp 0.4s cubic-bezier(0.4,0,0.2,1);backdrop-filter:blur(8px);background:rgba(var(--accent-rgb),0.04);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+        .pwa-install-banner.show{display:flex}
+        .pwa-install-banner .pwa-icon{width:44px;height:44px;border-radius:var(--radius-sm);background:linear-gradient(135deg,var(--accent),var(--purple));display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:1.1rem;flex-shrink:0}
+        .pwa-install-banner .pwa-text{flex:1;min-width:0}
+        .pwa-install-banner .pwa-text strong{display:block;font-size:0.9rem}
+        .pwa-install-banner .pwa-text span{font-size:0.75rem;color:var(--text-secondary)}
+        .pwa-install-banner .pwa-actions{display:flex;gap:0.4rem;flex-shrink:0}
+        .pwa-install-banner .pwa-actions .btn{width:auto;padding:0.4rem 0.8rem;font-size:0.8rem}
+        .pwa-install-banner .pwa-actions .btn-ghost{padding:0.4rem 0.6rem}
+        @media(min-width:640px){.pwa-install-banner{left:50%;transform:translateX(-50%);max-width:500px;bottom:calc(var(--nav-height) + 1rem)}}
+
         ::-webkit-scrollbar{width:4px;height:4px}::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
     </style>
 </head>
@@ -457,6 +482,15 @@
 
     <div id="appContainer" class="app-container" style="display:none">
         <div class="toast-container" id="toastContainer"></div>
+        <!-- PWA Install Banner -->
+        <div class="pwa-install-banner" id="pwaInstallBanner">
+            <div class="pwa-icon">FP</div>
+            <div class="pwa-text"><strong>Install FinPlan</strong><span>Add to home screen for quick access</span></div>
+            <div class="pwa-actions">
+                <button class="btn btn-primary btn-sm" id="pwaInstallBtn">Install</button>
+                <button class="btn btn-ghost btn-sm" id="pwaDismissBtn">✕</button>
+            </div>
+        </div>
         <div class="main-content" id="mainContent"></div>
         <nav class="bottom-nav" role="navigation" aria-label="Main navigation">
             <a href="#" class="nav-item active" data-page="dashboard" role="tab" aria-selected="true" aria-label="Home">
@@ -497,6 +531,105 @@
     (async function() {
         'use strict';
 
+        /* ===== PWA SETUP ===== */
+        let deferredPrompt = null;
+        const installBanner = document.getElementById('pwaInstallBanner');
+        const installBtn = document.getElementById('pwaInstallBtn');
+        const dismissBtn = document.getElementById('pwaDismissBtn');
+
+        // Check if already installed (standalone mode)
+        if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) {
+            installBanner.style.display = 'none';
+        }
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            if (!window.matchMedia('(display-mode: standalone)').matches) {
+                installBanner.classList.add('show');
+            }
+        });
+
+        window.addEventListener('appinstalled', () => {
+            installBanner.classList.remove('show');
+            deferredPrompt = null;
+            toast('FinPlan installed successfully! 🎉', 'success');
+        });
+
+        if (installBtn) {
+            installBtn.addEventListener('click', async () => {
+                if (deferredPrompt) {
+                    deferredPrompt.prompt();
+                    const result = await deferredPrompt.userChoice;
+                    if (result.outcome === 'accepted') {
+                        installBanner.classList.remove('show');
+                        toast('Installing FinPlan...', 'info');
+                    } else {
+                        toast('Installation cancelled', 'info');
+                    }
+                    deferredPrompt = null;
+                } else {
+                    toast('Open this page in Chrome and tap "Add to Home Screen"', 'info');
+                }
+            });
+        }
+
+        if (dismissBtn) {
+            dismissBtn.addEventListener('click', () => {
+                installBanner.classList.remove('show');
+                localStorage.setItem('fp_pwa_dismissed', 'true');
+            });
+        }
+
+        // Check if user previously dismissed
+        if (localStorage.getItem('fp_pwa_dismissed') === 'true') {
+            installBanner.classList.remove('show');
+        }
+
+        // Also show banner if user is on mobile and not installed
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        if (isMobile && !window.matchMedia('(display-mode: standalone)').matches && !localStorage.getItem('fp_pwa_dismissed')) {
+            // Show banner after a slight delay if no beforeinstallprompt fired
+            setTimeout(() => {
+                if (!deferredPrompt && !window.matchMedia('(display-mode: standalone)').matches) {
+                    installBanner.classList.add('show');
+                }
+            }, 3000);
+        }
+
+        /* ===== SERVICE WORKER (simplified) ===== */
+        // Note: For a single-file PWA, we use a minimal service worker
+        // that only caches the app for offline use. This uses a blob URL
+        // which works in some browsers. Chrome requires a separate file
+        // for full SW support, but the app is still installable via manifest.
+        try {
+            const swCode = `
+                self.addEventListener('install', e => {
+                    e.waitUntil(
+                        caches.open('finplan-v1').then(c => c.addAll([
+                            './',
+                            '${window.location.href.split('?')[0]}'
+                        ]))
+                    );
+                    self.skipWaiting();
+                });
+                self.addEventListener('activate', e => {
+                    e.waitUntil(clients.claim());
+                });
+                self.addEventListener('fetch', e => {
+                    e.respondWith(
+                        caches.match(e.request).then(r => r || fetch(e.request).catch(() => new Response('Offline', {status:503})))
+                    );
+                });
+            `;
+            const swBlob = new Blob([swCode], { type: 'application/javascript' });
+            const swUrl = URL.createObjectURL(swBlob);
+            // Try to register - may fail in Chrome, but that's OK
+            navigator.serviceWorker.register(swUrl, { scope: './' })
+                .then(() => console.log('SW registered'))
+                .catch(() => console.log('SW registration skipped (expected for single-file PWA)'));
+        } catch (_) { /* ignore */ }
+
         /* ===== THEME ENGINE ===== */
         const ThemeEngine = {
             storageKey: 'fp_theme',
@@ -508,11 +641,9 @@
                 if (saved) {
                     try { Object.assign(this.state, JSON.parse(saved)); } catch {}
                 } else {
-                    // Auto-detect system preference on first visit
                     this.state.mode = this.prefersDarkMql.matches ? 'dark' : 'light';
                 }
                 this.apply();
-                // Listen for system preference changes
                 this.prefersDarkMql.addEventListener('change', (e) => {
                     if (!localStorage.getItem(this.storageKey)) {
                         this.state.mode = e.matches ? 'dark' : 'light';
@@ -527,19 +658,16 @@
 
             apply() {
                 const html = document.documentElement;
-                // Theme mode
                 if (this.state.mode === 'dark') {
                     html.setAttribute('data-theme', 'dark');
                 } else {
                     html.removeAttribute('data-theme');
                 }
-                // Contrast
                 if (this.state.contrast === 'high') {
                     html.setAttribute('data-contrast', 'high');
                 } else {
                     html.removeAttribute('data-contrast');
                 }
-                // Color theme
                 if (this.state.colorTheme === 'custom' && this.state.customAccent) {
                     html.setAttribute('data-color-theme', 'custom');
                     const hex = this.state.customAccent;
@@ -550,8 +678,6 @@
                     document.documentElement.style.setProperty('--custom-accent-rgb', rgb);
                 } else if (this.state.colorTheme !== 'professional') {
                     html.setAttribute('data-color-theme', this.state.colorTheme);
-                    html.removeAttribute('data-color-theme-custom');
-                    // Clear custom vars
                     document.documentElement.style.removeProperty('--custom-accent');
                     document.documentElement.style.removeProperty('--custom-accent-dark');
                     document.documentElement.style.removeProperty('--custom-accent-rgb');
@@ -608,7 +734,6 @@
             }
         };
 
-        // Initialize theme immediately (before any rendering)
         ThemeEngine.init();
 
         const I={
@@ -754,13 +879,11 @@
         document.getElementById('bioBtn').addEventListener('click',async()=>{const ok=await Sec.authBio();if(ok)toast('Biometric verified.','info')});
         document.getElementById('resetDataBtn').addEventListener('click',()=>{if(confirm('Delete ALL data?')){DK.forEach(k=>{localStorage.removeItem('fp_e_'+k);localStorage.removeItem(k)});localStorage.removeItem(PIN_H);localStorage.removeItem(BIO_K);localStorage.removeItem(LOCK_K);localStorage.removeItem(ThemeEngine.storageKey);_cache={};toast('All data reset','error');showSetupMode()}});
 
-        /* ===== THEME TOGGLE & SETTINGS IN TOP BAR ===== */
         let themePanelOpen = false;
 
         function tba(){
             const isDark = ThemeEngine.state.mode === 'dark';
             const modeIcon = isDark ? ic('moon') : ic('sun');
-            const modeLabel = isDark ? 'Dark' : 'Light';
             const isSys = ThemeEngine.isSystem();
             return `<div class="top-bar-actions">
                 <button class="btn-icon theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark mode" title="Toggle theme">${modeIcon}</button>
@@ -815,7 +938,6 @@
             const t=document.getElementById('togBalBtn');
             if(t)t.onclick=()=>{balVis=!balVis;localStorage.setItem(BAL_V,balVis?'visible':'hidden');navigate(currentPage)};
 
-            // Theme toggle (quick dark/light)
             const toggleBtn = document.getElementById('themeToggleBtn');
             if(toggleBtn) toggleBtn.onclick = () => {
                 const newMode = ThemeEngine.state.mode === 'dark' ? 'light' : 'dark';
@@ -823,7 +945,6 @@
                 navigate(currentPage);
             };
 
-            // Theme settings panel
             const settingsBtn = document.getElementById('themeSettingsBtn');
             const panel = document.getElementById('themeSettingsPanel');
             if(settingsBtn && panel){
@@ -833,7 +954,6 @@
                 };
             }
 
-            // Mode buttons
             document.querySelectorAll('[data-mode]').forEach(btn => {
                 btn.onclick = () => {
                     const mode = btn.dataset.mode;
@@ -851,7 +971,6 @@
                 };
             });
 
-            // Color theme buttons
             document.querySelectorAll('[data-ct]').forEach(btn => {
                 btn.onclick = () => {
                     ThemeEngine.setColorTheme(btn.dataset.ct);
@@ -859,7 +978,6 @@
                 };
             });
 
-            // Custom accent color input
             const colorInput = document.getElementById('accentColorInput');
             const hexLabel = document.getElementById('accentHexLabel');
             const pickerArea = document.getElementById('accentPickerArea');
@@ -868,14 +986,12 @@
                     const hex = colorInput.value;
                     if(hexLabel) hexLabel.textContent = hex.toUpperCase();
                     ThemeEngine.setCustomAccent(hex);
-                    // Update active states
                     document.querySelectorAll('[data-ct]').forEach(b => b.classList.remove('active'));
                     if(pickerArea) pickerArea.classList.add('active');
                     document.querySelectorAll('.accent-preset').forEach(p => p.classList.toggle('active', p.dataset.accent === hex));
                 };
             }
 
-            // Accent presets
             document.querySelectorAll('[data-accent]').forEach(btn => {
                 btn.onclick = () => {
                     const hex = btn.dataset.accent;
@@ -884,7 +1000,6 @@
                 };
             });
 
-            // Contrast toggle
             const contrastBtn = document.getElementById('contrastToggle');
             if(contrastBtn){
                 contrastBtn.onclick = () => {
@@ -902,7 +1017,6 @@
 
         const CATS=[{id:'housing',name:'Housing & Rent',icon:'🏠',color:'blue'},{id:'food',name:'Food & Dining',icon:'🍔',color:'green'},{id:'transport',name:'Transportation',icon:'🚗',color:'yellow'},{id:'utilities',name:'Utilities & Bills',icon:'💡',color:'purple'},{id:'shopping',name:'Shopping',icon:'🛍️',color:'red'},{id:'entertainment',name:'Entertainment',icon:'🎬',color:'blue'},{id:'health',name:'Health & Fitness',icon:'💪',color:'green'},{id:'other',name:'Other',icon:'📦',color:'yellow'}];
 
-        /* ==================== SMART INSIGHTS ENGINE ==================== */
         function generateInsights(){
             const insights=[];
             const mi=getMI(),mtx=getCMTx(),ptx=getPrevMTx();
